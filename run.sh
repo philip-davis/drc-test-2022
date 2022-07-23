@@ -8,6 +8,8 @@
 rm -f drcid
       
 fi_info -l
+
+export FI_LOG_LEVEL=warn
  
 num_procs=256
 procs_per_node=32

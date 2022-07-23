@@ -1,0 +1,7 @@
+packages:
+  libfabric:
+    externals:
+    - spec: libfabric@1.8.1
+      modules:
+      - libfabric/1.8.1
+    buildable: false

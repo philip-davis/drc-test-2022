@@ -62,6 +62,7 @@ int main(int argc, char *argv[])
         fclose(fd);
     }
     MPI_Bcast(&drc_credential_id, 1, MPI_UINT32_T, 0, MPI_COMM_WORLD);   
+    fprintf(stderr, "drc_credential_id = %" PRIu32 "\n", drc_credential_id);
  
     /* access credential and covert to string for use by mercury */
     ret = drc_access(drc_credential_id, 0, &drc_credential_info);
